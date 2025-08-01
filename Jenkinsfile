@@ -57,8 +57,8 @@ environment {
                                 mvnHome = tool "M2"
                                 println(mvnHome)
                                 
-                                //sh "${mvnHome}/bin/mvn --version"
-                                bat "mvn --version"
+                                sh "mvn --version"
+                                //bat "mvn --version"
 
                             }
                         }
