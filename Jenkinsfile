@@ -14,7 +14,10 @@ pipeline {
                     customWorkspace "${workspace}"   //指定运行工作目录（可选）
             }
     }
-
+environment {
+        LANG = 'en_US.UTF-8'
+        LC_ALL = 'en_US.UTF-8'
+    }
     options {
         timestamps()  //日志会有时间
         skipDefaultCheckout()  //删除隐式checkout scm语句
