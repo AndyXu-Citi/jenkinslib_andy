@@ -1,8 +1,8 @@
 #!groovy
 
-@Library('jenkinslib') _
+//@Library('jenkinslib') _
 
-def tools = new org.devops.tools()
+//def tools = new org.devops.tools()
 
 
 
@@ -33,7 +33,7 @@ pipeline {
                         tools.PrintMes("获取代码",'green')
                         println("${test}")
                         
-                        input id: 'Test', message: '我们是否要继续？', ok: '是，继续吧！', parameters: [choice(choices: ['a', 'b'], description: '', name: 'test1')], submitter: 'lizeyang,admin'
+//                        input id: 'Test', message: '我们是否要继续？', ok: '是，继续吧！', parameters: [choice(choices: ['a', 'b'], description: '', name: 'test1')], submitter: 'lizeyang,admin'
                     }
                 }
             }
