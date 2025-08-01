@@ -14,6 +14,7 @@ pipeline {
                     customWorkspace "${workspace}"   //指定运行工作目录（可选）
             }
     }
+    // 强行指定环境
 environment {
         LANG = 'en_US.UTF-8'
         LC_ALL = 'en_US.UTF-8'
