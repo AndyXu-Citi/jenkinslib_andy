@@ -54,7 +54,7 @@ pipeline {
                                 println(mvnHome)
                                 
                                 //sh "${mvnHome}/bin/mvn --version"
-                                bash "mvn --version"
+                                bat "mvn --version"
 
                             }
                         }
